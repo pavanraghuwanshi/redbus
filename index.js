@@ -33,7 +33,7 @@ const fetchDataAndMerge = async () => {
           vehicleNo: device.name,
         };
       });
-    console.log(mergedData);
+    // console.log(mergedData);
     await postData(mergedData);
   } catch (error) {
     console.error('Error fetching or merging data:', error);
@@ -52,7 +52,7 @@ const postData = async (data) => {
         },
       }
     );
-    console.log(res.data);
+    // console.log(res.data);
   } catch (error) {
     console.error('Error posting data:', error);
   }
